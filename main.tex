@@ -1,0 +1,44 @@
+\documentclass[12pt, a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[a4paper, left=5cm]{geometry}
+\usepackage{titlesec}
+\usepackage{essayTitle}
+\usepackage[
+backend=biber,
+style=authortitle,
+citestyle=authoryear
+]{biblatex}
+\addbibresource{references.bib}
+
+\linespread{1.0}
+
+\let\endtitlepage\relax
+
+\titleformat*{\section}{\bfseries\sffamily}
+
+\title{Write the title using 14p Arial, bold or similar font}
+
+\author{Teemu Teekkari}
+\studentID{123456}
+\email{teemu.teekkari@aalto.fi}
+
+\begin{document}
+
+\maketitle
+
+Use 12p Times New Roman or similar font for the body text. Format using single line spacing and justify the body text. 
+Use clear paragraph breaks to structure your text. 
+Leave 5 cm margin on the left side of the page.
+
+Do not exceed the instructed length of the essay. Length is counted as words excluding heading and title of the essay and references but including subheadings. E.g., length of this sample is 127 words.
+
+\section*{Subheadings 12p Arial, bold}
+
+You can use subheadings if you need them for structuring your essay.
+
+Remember to use references when referring to source material and cite the sources accurately. For example when you write about risk-based testing \autocite{amland2000risk} based on the article by Ståle Amland. Clearly separate your own thinking form the source material. Avoid citing the whole paragraphs by putting the citation at the end of the paragraph. (no citations here)
+List your references at the end of the essay.
+
+\printbibliography
+
+\end{document}

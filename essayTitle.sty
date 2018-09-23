@@ -1,0 +1,21 @@
+\ProvidesPackage{essayTitle}
+\newcommand*{\email}[1]{\gdef\@email{#1}%
+}
+\newcommand*{\@email}{\texttt{\string\email} not set}
+\newcommand*{\studentID}[1]{\gdef\@studentID{#1}%
+}
+\newcommand*{\@studentID}{\texttt{\string\studentID} not set}
+\renewcommand*{\maketitle}{%
+\begin{titlepage}
+{\noindent CS-E4960 Software Testing and Quality Assurance, 2018 \par}
+{\noindent Individual essay \par}
+{\noindent \@author, \@email \par}
+{\noindent \@studentID \par}
+\vspace{1cm}
+\centering
+{\large\bfseries\sffamily\@title}
+\vspace{0.5cm}
+\end{titlepage}
+}
+
+\endinput
